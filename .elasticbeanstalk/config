@@ -1,0 +1,11 @@
+[global]
+ApplicationName=EventQserv
+DevToolsEndpoint=git.elasticbeanstalk.us-west-2.amazonaws.com
+EnvironmentName=EventQservDev
+InstanceProfileName=aws-elasticbeanstalk-ec2-role
+OptionSettingFile=/Users/sharonnachum/RubymineProjects/eventQserv/.elasticbeanstalk/optionsettings.EventQservDev
+RdsEnabled=No
+Region=us-west-2
+ServiceEndpoint=https://elasticbeanstalk.us-west-2.amazonaws.com
+SolutionStack=64bit Amazon Linux running Ruby 1.9.3
+

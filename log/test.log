@@ -1,0 +1,210 @@
+[AWS Core 400 0.097062 0 retries] describe_table(:table_name=>"dev_event") AWS::DynamoDB::Errors::ResourceNotFoundException Requested resource not found: Table : dev_event not found
+
+[AWS Core 200 0.008494 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"event_id",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_event")  
+
+[AWS Core 200 0.006522 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.006312 0 retries] put_item(:item=>{"event_id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"id"=>{:s=>"xx"},"organizer"=>{:s=>"5005556669"},"title"=>{:s=>"Take Ms. Wallace Out"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.007909 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"phone_number",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_users")  
+
+[AWS Core 200 0.005977 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.005781 0 retries] put_item(:item=>{"first_name"=>{:s=>"Vincent"},"last_name"=>{:s=>"Vega"},"phone_number"=>{:s=>"5005556669"}},:table_name=>"dev_users")  
+
+[AWS Core 200 0.007504 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.00722 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"5555551212"}},:table_name=>"dev_users")  
+
+[AWS Core 200 0.007812 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.006576 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"bogus"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.007556 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.014309 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"}},:table_name=>"dev_event")  
+
+[AWS Core 403 0.812696 1 retries] create_queue(:queue_name=>"dev_event") AWS::SQS::Errors::InvalidClientTokenId The security token included in the request is invalid.
+
+[AWS Core 200 0.005814 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.005976 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"}},:table_name=>"dev_event")  
+
+[AWS Core 403 0.317308 1 retries] create_queue(:queue_name=>"dev_event") AWS::SQS::Errors::InvalidClientTokenId The security token included in the request is invalid.
+
+[AWS Core 400 0.014778 0 retries] describe_table(:table_name=>"dev_event") AWS::DynamoDB::Errors::ResourceNotFoundException Requested resource not found: Table : dev_event not found
+
+[AWS Core 200 0.007254 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"event_id",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_event")  
+
+[AWS Core 200 0.005743 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 400 0.014868 0 retries] describe_table(:table_name=>"dev_event") AWS::DynamoDB::Errors::ResourceNotFoundException Requested resource not found: Table : dev_event not found
+
+[AWS Core 200 0.008231 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"event_id",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_event")  
+
+[AWS Core 200 0.016552 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 400 0.00557 0 retries] put_item(:item=>{"id"=>{:s=>"xx"},"organizer"=>{:s=>"5005556669"},"title"=>{:s=>"Take Ms. Wallace Out"}},:table_name=>"dev_event") AWS::DynamoDB::Errors::ValidationException Validation error detected: Missing the key event_id in the item
+
+[AWS Core 400 0.014983 0 retries] describe_table(:table_name=>"dev_event") AWS::DynamoDB::Errors::ResourceNotFoundException Requested resource not found: Table : dev_event not found
+
+[AWS Core 200 0.008042 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"event_id",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_event")  
+
+[AWS Core 200 0.005609 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.005679 0 retries] put_item(:item=>{"event_id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"organizer"=>{:s=>"5005556669"},"title"=>{:s=>"Take Ms. Wallace Out"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.007364 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"phone_number",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_users")  
+
+[AWS Core 200 0.006537 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.005133 0 retries] put_item(:item=>{"first_name"=>{:s=>"Vincent"},"last_name"=>{:s=>"Vega"},"phone_number"=>{:s=>"5005556669"}},:table_name=>"dev_users")  
+
+[AWS Core 200 0.005324 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.007151 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.005281 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.005774 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.005406 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.004507 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"bogus"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.006218 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.00507 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"5555551212"}},:table_name=>"dev_users")  
+
+[AWS Core 400 0.015877 0 retries] describe_table(:table_name=>"dev_event") AWS::DynamoDB::Errors::ResourceNotFoundException Requested resource not found: Table : dev_event not found
+
+[AWS Core 200 0.007082 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"event_id",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_event")  
+
+[AWS Core 200 0.010652 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.005233 0 retries] put_item(:item=>{"event_id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"organizer"=>{:s=>"5005556669"},"title"=>{:s=>"Take Ms. Wallace Out"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.006931 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"phone_number",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_users")  
+
+[AWS Core 200 0.005647 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.005367 0 retries] put_item(:item=>{"first_name"=>{:s=>"Vincent"},"last_name"=>{:s=>"Vega"},"phone_number"=>{:s=>"5005556669"}},:table_name=>"dev_users")  
+
+[AWS Core 200 0.005685 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.004714 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"+13102275317"}},:table_name=>"dev_users")  
+
+[AWS Core 200 0.005923 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.004847 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"5555551212"}},:table_name=>"dev_users")  
+
+[AWS Core 200 0.007119 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.004789 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"bogus"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.005975 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.005929 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.005695 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.005984 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"}},:table_name=>"dev_event")  
+
+[AWS Core 400 0.036325 0 retries] describe_table(:table_name=>"dev_event") AWS::DynamoDB::Errors::ResourceNotFoundException Requested resource not found: Table : dev_event not found
+
+[AWS Core 200 0.0177 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"event_id",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_event")  
+
+[AWS Core 200 0.004661 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.005639 0 retries] put_item(:item=>{"event_id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"organizer"=>{:s=>"5005556669"},"title"=>{:s=>"Take Ms. Wallace Out"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.006544 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"phone_number",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_users")  
+
+[AWS Core 200 0.005327 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.006081 0 retries] put_item(:item=>{"first_name"=>{:s=>"Vincent"},"last_name"=>{:s=>"Vega"},"phone_number"=>{:s=>"5005556669"}},:table_name=>"dev_users")  
+
+[AWS Core 200 0.005432 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.006036 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"+13102275317"}},:table_name=>"dev_users")  
+
+[AWS Core 400 0.015339 0 retries] describe_table(:table_name=>"dev_event") AWS::DynamoDB::Errors::ResourceNotFoundException Requested resource not found: Table : dev_event not found
+
+[AWS Core 200 0.007034 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"event_id",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_event")  
+
+[AWS Core 200 0.005126 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.006237 0 retries] put_item(:item=>{"event_id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"organizer"=>{:s=>"5005556669"},"title"=>{:s=>"Take Ms. Wallace Out"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.007057 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"phone_number",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_users")  
+
+[AWS Core 200 0.004691 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.004987 0 retries] put_item(:item=>{"first_name"=>{:s=>"Vincent"},"last_name"=>{:s=>"Vega"},"phone_number"=>{:s=>"5005556669"}},:table_name=>"dev_users")  
+
+[AWS Core 200 0.00653 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.004784 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"+13102275317"}},:table_name=>"dev_users")  
+
+[AWS Core 400 0.096422 0 retries] describe_table(:table_name=>"dev_event") AWS::DynamoDB::Errors::ResourceNotFoundException Requested resource not found: Table : dev_event not found
+
+[AWS Core 200 0.008297 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"event_id",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_event")  
+
+[AWS Core 200 0.00595 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.005672 0 retries] put_item(:item=>{"event_id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"organizer"=>{:s=>"5005556669"},"title"=>{:s=>"Take Ms. Wallace Out"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.006868 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"phone_number",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_users")  
+
+[AWS Core 200 0.005725 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.004599 0 retries] put_item(:item=>{"first_name"=>{:s=>"Vincent"},"last_name"=>{:s=>"Vega"},"phone_number"=>{:s=>"5005556669"}},:table_name=>"dev_users")  
+
+[AWS Core 200 0.009261 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.004884 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"+13102275317"}},:table_name=>"dev_users")  
+
+[AWS Core 400 0.034108 0 retries] describe_table(:table_name=>"dev_event") AWS::DynamoDB::Errors::ResourceNotFoundException Requested resource not found: Table : dev_event not found
+
+[AWS Core 200 0.008301 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"event_id",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_event")  
+
+[AWS Core 200 0.006831 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.005796 0 retries] put_item(:item=>{"event_id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"organizer"=>{:s=>"5005556669"},"title"=>{:s=>"Take Ms. Wallace Out"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.007158 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"phone_number",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_users")  
+
+[AWS Core 200 0.006192 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.005687 0 retries] put_item(:item=>{"first_name"=>{:s=>"Vincent"},"last_name"=>{:s=>"Vega"},"phone_number"=>{:s=>"5005556669"}},:table_name=>"dev_users")  
+
+[AWS Core 200 0.034775 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.036562 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.035531 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.037878 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 400 0.084965 0 retries] describe_table(:table_name=>"dev_event") AWS::DynamoDB::Errors::ResourceNotFoundException Requested resource not found: Table : dev_event not found
+
+[AWS Core 200 0.009568 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"event_id",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_event")  
+
+[AWS Core 200 0.006421 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.006953 0 retries] put_item(:item=>{"event_id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"id"=>{:s=>"e8316faf-eeee-4f3d-9fcb-d8cbed18e73d"},"organizer"=>{:s=>"5005556669"},"title"=>{:s=>"Take Ms. Wallace Out"}},:table_name=>"dev_event")  
+
+[AWS Core 200 0.007003 0 retries] create_table(:key_schema=>{:hash_key_element=>{:attribute_name=>"phone_number",:attribute_type=>"S"}},:provisioned_throughput=>{:read_capacity_units=>10,:write_capacity_units=>5},:table_name=>"dev_users")  
+
+[AWS Core 200 0.006095 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.00495 0 retries] put_item(:item=>{"first_name"=>{:s=>"Vincent"},"last_name"=>{:s=>"Vega"},"phone_number"=>{:s=>"5005556669"}},:table_name=>"dev_users")  
+
+[AWS Core 200 0.014974 0 retries] put_item(:item=>{"first_name"=>{:s=>"John"},"last_name"=>{:s=>"Doe"},"phone_number"=>{:s=>"+1111"}},:table_name=>"dev_users")  
+
+[AWS Core 200 0.038559 0 retries] describe_table(:table_name=>"dev_event")  
+
+[AWS Core 200 0.005123 0 retries] describe_table(:table_name=>"dev_users")  
+
+[AWS Core 200 0.006294 0 retries] get_item(:consistent_read=>false,:key=>{:hash_key_element=>{:s=>"+1111"}},:table_name=>"dev_users")  
+
